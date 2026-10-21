@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e8e4">
+  <meta name="description" content="A little question, just for you.">
+  <title>A little question for you ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/scare-face.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="scene" id="scene">
+    <span class="doodle doodle-one" aria-hidden="true">✳</span>
+    <span class="doodle doodle-two" aria-hidden="true">♡</span>
+    <span class="doodle doodle-three" aria-hidden="true">✦</span>
+    <span class="doodle doodle-four" aria-hidden="true">✳</span>
+
+    <div class="invitation" id="invitation">
+      <div class="envelope-flap" aria-hidden="true"></div>
+      <div class="card">
+        <div class="stamp" aria-hidden="true"><span>♡</span></div>
+        <p class="eyebrow">a little note for you</p>
+        <div class="tiny-divider" aria-hidden="true"><span></span>♥<span></span></div>
+        <h1>If you’re reading this,<br><em>it means I like you.</em></h1>
+        <p class="message">Like, <i>like</i> you. And I was wondering if maybe we could go on a date sometime?</p>
+        <p class="question">What do you say?</p>
+        <div class="choices" role="group" aria-label="Answer the invitation">
+          <button class="choice choice-yes" type="button" data-answer="yes"><span>Yes, I’d love to</span><span aria-hidden="true">↗</span></button>
+          <button class="choice choice-no" type="button" data-answer="no">No, thank you</button>
+        </div>
+        <p class="signature">with a little courage, <span>♡</span></p>
+      </div>
+      <div class="under-card" aria-hidden="true"></div>
+    </div>
+
+    <p class="footer-note">made with butterflies in my stomach <span aria-hidden="true">✿</span></p>
+  </main>
+
+  <div class="scare" id="scare" role="dialog" aria-modal="true" aria-label="Jump scare" aria-hidden="true">
+    <img src="assets/scare-face.webp" alt="A terrifying face suddenly lunges forward">
+    <div class="scare-vignette" aria-hidden="true"></div>
+  </div>
+
+  <section class="after" id="after" aria-labelledby="after-title" hidden>
+    <div class="after-card">
+      <span class="after-heart" aria-hidden="true">♡</span>
+      <p class="after-eyebrow">okay, okay...</p>
+      <h2 id="after-title">Sorry. I had to.</h2>
+      <p>But the part where I like you? That was real.</p>
+      <button type="button" id="again">Try the question again <span aria-hidden="true">↗</span></button>
+    </div>
+  </section>
+</body>
+</html>
